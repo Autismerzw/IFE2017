@@ -1,0 +1,409 @@
+/*初始化*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*全局设置*/
+
+html {
+    background: #ccc;
+}
+
+body {
+    font-size: 12px;
+    font-family: SimHei, sans-serif;
+    width: 980px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+
+/*头部设置*/
+
+header {
+    width: 892px;
+    margin: 0 auto;
+    border-bottom: 2px #938e8c solid;
+}
+
+
+/**/
+
+.hbox {
+    width: 110px;
+    height: 61px;
+    background: #D45C5B;
+    color: #fff;
+    display: inline-block;
+}
+
+header span {
+    position: relative;
+    bottom: -45px;
+}
+
+.cbtime {
+    float: right;
+    display: inline-block;
+    color: #D45d5c;
+}
+
+
+/*首屏容器*/
+
+article,
+section,
+footer {
+    width: 892px;
+    margin: 0 auto;
+    margin-top: 35px;
+    overflow: hidden;
+}
+
+
+/*图片容器*/
+
+.imgfig {
+    width: 641px;
+    height: 301px;
+    display: inline-block;
+    position: relative;
+}
+
+
+/*图片遮罩*/
+
+.imgfig div {
+    width: 191px;
+    height: 301px;
+    position: absolute;
+    opacity: .5;
+}
+
+.imgfig div.fleft {
+    background: #A1C6AC;
+    top: 0;
+}
+
+.imgfig div.fright {
+    background: #E6BBC0;
+    top: 0;
+    right: 0;
+}
+
+
+/*图片大小*/
+
+.imgfig img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*首屏侧边容器*/
+
+article aside {
+    float: right;
+    width: 203px;
+    border-top: 2px #cc8091 solid;
+}
+
+.a-about {
+    font-size: 22px;
+    font-family: Microsoft Yahei;
+    color: #000;
+    line-height: 40px;
+    text-decoration: underline;
+    vertical-align: ;
+}
+
+.a-about strong {
+    font-size: 26px;
+}
+
+.p-about {
+    color: #676767;
+    line-height: 10px;
+    font-family: KaiTi;
+}
+
+article aside .num {
+    font-size: 116px;
+    color: #75b86b;
+    font-family: Microsoft Yahei;
+    margin-left: -17px;
+}
+
+article aside div {
+    color: #cc8091;
+    font-family: Microsoft Yahei;
+    margin-top: -18px;
+    position: relative;
+}
+
+article aside div .flot-num {
+    font-size: 55px;
+    display: inline-block;
+}
+
+article aside div .css {
+    font-size: 21px;
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+}
+
+section {
+    font-family: Microsoft Yahei;
+}
+
+ul.cols {
+    width: 641px;
+    overflow: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+section li.col-3 {
+    float: left;
+    width: 200px;
+    margin-left: 13px;
+}
+
+li.col-3 h3 {
+    font-size: 16px;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+li.col-3 h3.green {
+    color: #418c59;
+}
+
+li.col-3 h3.yellow {
+    color: #d2994f;
+}
+
+li.col-3 h3.red {
+    color: #cc7680;
+}
+
+section li p.main-text {
+    font-family: SimSun;
+    line-height: 16px;
+    color: #767777;
+}
+
+ul.catalog {
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+ul.catalog li i {
+    color: #cd4a48;
+}
+
+section main {
+    width: 415px;
+}
+
+section main div.title {
+    border-bottom: 2px #11456b solid;
+    font-family: SimHei;
+    font-weight: bold;
+    color: #11456b;
+}
+
+div.title h2 {
+    font-size: 42px;
+}
+
+div.title h2 i {
+    font-size: 72px;
+    color: #f5e327;
+    margin-right: 16px;
+}
+
+div.title h3 {
+    font-size: 33px;
+    margin-bottom: 10px;
+}
+
+section main {
+    float: left;
+}
+
+section main div.works {
+    margin-top: 20px;
+}
+
+section main div.works p {
+    text-indent: 2em;
+    line-height: 16px;
+    color: #767777;
+    font-family: SimSun;
+}
+
+section main div.works p:nth-child(1) {
+    text-indent: 0;
+}
+
+section main div.works p span.qian {
+    float: left;
+    padding: 30px 5px 30px 0;
+    font-size: 70px;
+    color: #f5e327;
+}
+
+section main div.works img {
+    float: right;
+    width: 167px;
+    height: 288px;
+    padding: 10px 0 10px 10px;
+}
+
+section aside {
+    float: right;
+    overflow: hidden;
+}
+
+.imgfig2 {
+    width: 458px;
+    height: 275px;
+    position: relative;
+}
+
+.imgfig2 img {
+    width: 100%;
+    height: 100%;
+}
+.imgfig2 div{
+	width: 100%;
+	height: 61px;
+	background: rgba(0, 0, 0, 0.3);
+	position: absolute;
+	bottom: 0;
+}
+.imgfig2 div p{
+	width: 410px;
+	hight:45px;
+	margin: 8px auto;
+	padding-left: 10px; 
+	font-size: 26px;
+	color: #fff;
+	border-left: 3px #72b16a solid;
+	box-sizing: border-box;
+}
+.imgfig2 div p i{
+	font-size: 14px;
+	padding-left: 5px;
+	color:  #72b16a;
+	font-weight: bold;
+}
+
+.catalog-box{
+	width: 459px;
+	height: 318px;
+	background: #eeedd6;
+	margin-top: 20px;
+}
+.catalog-box .catalog-list{
+	width: 410px;
+	font-size: 16px;
+	color: #5a5b5b;
+	text-align: left;
+	line-height: 40px;
+	margin: 0 auto;
+	padding: 16px 0; 
+	letter-spacing:3px;
+	font-family: SimSun;
+}
+.catalog-box .catalog-list li:before{
+	content: "";
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent; 
+	border-right: 5px solid transparent; 
+	border-bottom: 10px solid #10456b; 
+	display: inline-block;
+	margin-right: 5px;
+}
+.catalog-box .catalog-list i{
+	font-size: 12px;
+}
+.catalog-box .ad-list1{
+	float: left;
+	width: 260px;
+	height: 160px;
+	background: #d45d5d;
+	color: #fff;
+}
+.catalog-box .ad-list1 span {
+	font-size: 110px;
+	margin-left: 5px;
+}
+.catalog-box .ad-list1 div{
+	float: right;
+	width: 180px;
+	height: 86px;
+	margin-top:33px; 
+	border-left: 2px #fff solid;
+	font-family: SimHei;
+}
+.catalog-box .ad-list1 div p.ad-tit1{
+	font-size: 21px;
+	line-height: 24px;
+	margin-left: 5px;
+	padding-left: 3px;
+}
+.catalog-box .ad-list1 div p.ad-tit2{
+	font-size: 12px;
+	line-height: 12px;
+	margin-left: 5px;
+	margin-top: 5px;
+	padding-left: 3px;
+}
+.catalog-box .ad-list2{
+	width: 190px;
+    float: left;
+    height: 130px;
+    margin-top: 10px;
+}
+.catalog-box .ad-list2 p{
+	 text-indent: 3em;
+	font-size: 14px;
+	line-height: 16px;
+	color: #5a5b5b;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+.catalog-box .ad-list2 span{
+	font-size: 72px;
+	font-family: "黑体";
+    color: #d45d5c;
+    height: 30px;
+    width: 36px;
+}
+.catalog-box .ad-list2 span.first{
+	float: left;
+}
+.catalog-box .ad-list2 span.end{
+	float: right;
+}
+footer {
+    height: 55px;
+    border-top: 1px #938e8c solid;
+    text-align: right;
+}
+
+footer a {
+    text-decoration: none;
+    color: #d45d5d;
+}
