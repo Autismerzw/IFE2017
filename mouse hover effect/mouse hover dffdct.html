@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>有趣的鼠标悬浮模糊效果</title>
+    <style>
+    body {
+        position: relative;
+    }
+    
+    figure {
+        width: 550px;
+        height: 300px;
+    }
+    
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    div {
+        opacity: 0;
+        width: 550px;
+        height: 300px;
+        background: rgba(0, 0, 0, .5);
+        position: absolute;
+        top: 0px;
+        left: 40px;
+        z-index: 1;
+        text-align: center;
+    }
+    
+    div:before {
+        content: "";
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width: 80.4%;
+        height: 0;
+        border: 3px #fff solid;
+        border-width: 3px 0;
+        visibility: hidden;
+        transition: all .5s;
+        z-index: 0
+    }
+    
+    div:after {
+        content: "";
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width: 0;
+        height: 80.1%;
+        border: 3px #fff solid;
+        border-width: 0 3px;
+        visibility: hidden;
+        transition: all .5s;
+        z-index: 0;
+    }
+    
+    figure:hover div {
+        opacity: 1;
+        text-align: center;
+        animation: show 1s linear;
+    }
+    
+    figure:hover div:before {
+        content: "";
+        height: 79%;
+        visibility: visible;
+        z-index: -1;
+    }
+    
+    figure:hover div:after {
+        content: "";
+        width: 79.5%;
+        visibility: visible;
+        z-index: -1;
+    }
+    
+    figure:hover .ss {
+        filter: blur(3px);
+    }
+    
+    figure:hover div h2 {
+        margin-top: 130px;
+    }
+    div a{
+    	
+    }
+    
+    div h2 {
+        background-image: -webkit-linear-gradient(left, #3498db, #f47920 10%, #d71345 20%, #f7acbc 30%, #ffd400 40%, #3498db 50%, #f47920 60%, #d71345 70%, #f7acbc 80%, #ffd400 90%, #3498db);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-size: 200%;
+        animation: streamer 5s infinite linear;
+    }
+    
+    div h2+a {
+    	text-decoration: none;
+        background-image: -webkit-linear-gradient(left, #3498db, #f47920 10%, #d71345 20%, #f7acbc 30%, #ffd400 40%, #3498db 50%, #f47920 60%, #d71345 70%, #f7acbc 80%, #ffd400 90%, #3498db);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-size: 200%;
+    }
+    
+    @keyframes show {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes streamer {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -100% 0
+    }
+}
+    </style>
+</head>
+
+<body>
+    <figure>
+        <div>
+            <h2>CHINESE DOTA IS BEST DOTA</h2>
+            <a href="#">请点击</a>
+        </div>
+        <img src="imges/wallhaven-255924.jpg" alt="dota2" class="ss">
+    </figure>
+    <a href="#">请点击</a>
+</body>
+
+</html>
